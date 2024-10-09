@@ -7,10 +7,28 @@
 </head>
 <body>
     <h1>First API Consumption</h1>
-    <button onclick="reload()">Recargar</button>
-    <img id="img1" width="150" alt="Resultado Consumo">
-    <img id="img2" width="150" alt="Resultado Consumo">
-    <img id="img3" width="150" alt="Resultado Consumo">
+    <span id="Error"></span>
+    <section id="randomMichis">
+        <h2>Random Cats</h2>
+        <article>
+            <img id="img1" width="150" alt="Resultado Consumo">
+            <button onclick="reload()">Save favorites</button>
+        </article>
+        <article>
+            <img id="img2" width="150" alt="Resultado Consumo">
+            <button onclick="reload()">Save favorites</button>
+        </article>
+        <button onclick="loadRandomMichis()">Reload</button>
+    </section>
+
+    <section id="favoritesMichis">
+        <h2>Favorite Cat</h2>
+        <article>
+            <img id="img3" width="150" alt="Resultado Consumo">
+            <button onclick="reload()">Delete of favorites</button>
+        </article>
+    </section>
+
 
     <script src="./main.js"></script>
 </body>
