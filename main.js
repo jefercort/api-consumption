@@ -1,5 +1,6 @@
 const API_URL_RANDOM = "https://api.thecatapi.com/v1/images/search?limit=2";
 const API_URL_FAVORITES = 'https://api.thecatapi.com/v1/favourites?limit=10&api_key=c08d415f-dea7-4a38-bb28-7b2188202e46';
+const API_URL_FAVORITES_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}?limit=10&api_key=c08d415f-dea7-4a38-bb28-7b2188202e46`;
 
 const spanError = document.getElementById("error");
 
@@ -72,6 +73,12 @@ async function saveFavoriteMichi(id) {
     if (res.status !== 200) {
         spanError.innerHTML = "Error al cargar las imágenes" + res.status + data.message;
     } 
+};
+
+async function deleteFavoriteMichi(id) {
+    const res = await fetch(API_URL_FAVORITES_DELETE(id), {
+        method: "DELETE",
+    })
 };
 
 loadRandomMichis();
