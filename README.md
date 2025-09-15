@@ -349,7 +349,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Kevin Cortes**
 - GitHub: [@jefercort](https://github.com/jefercort)
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/kevinc-proservices)
+- LinkedIn: [Kevin Cortes PRO](https://www.linkedin.com/in/kevinc-proservices)
 
 ## 🙏 Acknowledgments
 
